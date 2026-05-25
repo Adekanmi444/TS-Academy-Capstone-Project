@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bro develop it</title>
+        <style>
+            /*background styling*/
+            body {
+                background-color: rgb(240, 239, 239);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                padding: 20px;
+            }
+            .header {
+                background-color: brown;
+                color: white;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            .header h1 {
+                text-align: justify;
+                font-size: 35px;
+            }
+            .header p {
+                color: rgb(21, 20, 20);
+                font-style: italic;
+            }
+            h2 {
+                font-size: 32px;
+                color: darkgreen;
+                margin-top: 20px;
+                margin-bottom: 2px;
+                font-style: oblique;
+                padding-bottom: 10px;
+                border-bottom: solid ;
+                border-radius: 5px;
+            }
+            ul {
+                font-style: italic;
+                color: black;
+            }
+            ul li {
+                margin: 5px;
+                
+            }
+            ul li a {
+                text-decoration: none;
+                color: rgb(73, 138, 140);
+            }
+            ul li a:hover {
+                color: red;
+                text-decoration: underline;
+            }
+            table {
+                margin-top: 30px;
+                padding: 5px;
+                color: black;
+                width: 500%;
+                max-width: 500px;
+                border-collapse: collapse;
+                margin-bottom: 30px;
+            }
+            table th{
+                padding: 12px;
+                background-color: gray;
+                color: white;
+                font-style: italic; font-weight: bold;
+            }
+            table td {
+                padding: 10px; color: blue; 
+            }
+            table td:hover {
+                background-color: lightcoral;
+            }
+            form { 
+                padding: 5px;
+                border: solid 0.5px;
+                margin-top: 30px;
+                background-color: azure;
+                color: blue;
+                font-weight: bold;
+                margin-bottom: 30px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                width: 350px;
+
+            }
+            form label {
+                display: inline-block;
+                margin-top: 10px;
+                margin-bottom: 4px;
+            }
+            input[type=text]{
+                width: 220px;
+                border: solid 1px;
+                border-radius: 2px;
+            }
+            button {
+                margin-top: 10px;
+                font-size: large;
+                background-color: white;
+                border: solid 1.5px;
+                margin-bottom: 10px;
+            }
+            button:hover {
+                background-color: red;
+                color: white;
+                border: solid blue 1.5px;
+                cursor: pointer;
+            }
+            footer{
+                margin-top: 20x;
+                margin-bottom: 1px;
+                border-top: solid 1.5px gray;
+                border-bottom: solid 1.5px gray;
+                padding: 20px;
+                text-align: center;
+            }
+            footer a{
+                color: burlywood;
+                text-decoration: none;
+            }
+            footer a:hover {
+                color: black;
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="header">
+            <h1> Brother develop it </h1>
+            <p> don't be shy, change it</p>
+        </div><br><br>
+        <h2> About</h2><br>
+        <p> It can be intimidating for women to learn and ask questions when they are in extreme minority. while and open and welcoming, today's budding devdloper community is up to 91% male. If we can empower more females with the confidences in their technological capabilities we can change this landscape. </p><br>
+        <h2>Our Locations </h2><br>
+        <ul>
+            <li>USA
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/New_York_City#HeroSection">New York</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Columbus">Columbus</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Austin">Austin</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Philadelphia">Philly</a></li>
+                </ul>
+            </li>
+            <li>World
+                <uL>
+                    <li><a href="https://en.wikipedia.org/wiki/Ottawa">Ottawa</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Sydney">Sydney</a></li>
+                </uL>
+            </li>
+        </ul><br>
+        <h2>Upcoming Classes</h2>
+        <table border="1">
+           <tr><thead>
+                <th>Location</th>
+                <th>Topic</th>
+            </thead></tr>
+            <tr>
+                <td>New york</td>
+                <td>JavaScript & jQuery</td>
+            </tr>
+            <tr>
+                <td>San Francisco</td>
+                <td>HTML&CSS</td>
+            </tr>
+        </table>
+        <h2>Sign Up!</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+            <label for="Location">Location:</label><br>
+            <select id="Location" name="location">
+                <option value="San-Francisco">San Francisco</option>
+                <option value="New-York"> New York</option>
+                <option value="columbus"> Columbus</option>
+                <option value="austin">Austin</option>
+                <option value="philly">Philly</option>
+                <option value="ottawa">Ottawa</option>
+                <option value="sydney">Sydney</option>
+            </select><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <label for="exprience">Exprience:</label><br>
+            <textarea id="exprience" name="experience" placeholder="Tell us about your exprience"></textarea><br>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        </body>
+        <footer>
+            <a href="https://x.com/home?utm_source=homescreen&utm_medium=shortcut" target="_blank">Twitter</a> |
+            <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#" target="_blank">Facebook</a> |
+            <a href="https://www.flickr.com/" target="_blank">Flickr</a>
+        </footer>
+        
+    </html>
