@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Html Practices Website</title>
+    </head>
+    <body>
+        <h1> Welcome to my practice page</h1>
+        <p>This is a website created to showcase verything i've learned so far in HTML</p><br>
+        <h2>My Favorite Web Technologies:</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul><br>
+        <h2>Steps to Build a Webpage:</h2>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Practice CSS</li>
+            <li> Add JavaScript</li>
+        </ol><br>
+
+        <!--Frist image online-->
+        <img src="https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg" alt="Fresh Oranges" width="250" height="250">
+        <!--Second image from local file-->
+        <center><img src="/image/photo_2024-05-14_15-41-38.jpg" alt="Bible fight" width="250" height="250"></center><br>
+
+        <!--Links-->
+        <a href="https://en.wikipedia.org/wiki/Mars" target="_blank">Click to MARS Wikipedia</a><br>
+        <a href="#form-section"> Click to fill up the form</a><br><br>
+
+        <!--FORM SECTION-->
+        <h2 id="form-section">Fill up the form:</h2>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first name" placeholder="Enter your first name"><br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last Name" placeholder="Enter your Last name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="favorite-technology"> Favorite techonology:</label>
+            <select id="favorite-technology" name="fav-tech">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select><br><br>
+
+            <!--Gender selection-->
+            <label>Gender selection:</label><br>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="others" value="others" name="gender">
+            <label for="others">Others</label><br><br>
+
+            <!--Hobbies-->
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="writing" name="hobbies" value="writing">
+            <label for="writing">Writing</label><br>
+            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+            <label for="traveling">Traveling</label><br><br>
+
+            <!--submit-->
+            <button type="submit">Submit</button>
+            
+        </form>
+    </body>
+</html>
