@@ -46,6 +46,11 @@
   color: #164BAF;
 }
 
+.span h2 {
+  color: #1274A4;
+  text-decoration: underline;
+}
+
 /* Paragraph - desktop */
 .video-text p {
   font-family: 'Inter', sans-serif;
