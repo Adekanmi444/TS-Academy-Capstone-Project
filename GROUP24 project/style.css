@@ -125,28 +125,160 @@ padding is optional but i do this because of lists*/
   touch-action: manipulation;
 }
 
+/* Group 3 */
+
+/*BASE / DESKTOP STYLES*/
+
+.video-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 142px 125px;
+  gap: 40px;
+}
+
+/* Video wrapper - desktop */
+.video-wrapper {
+  width: 484.46px;
+  height: 496px;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text block - desktop */
+.video-text {
+  display: flex;
+  flex-direction: column;
+  width: 591.58px;
+  gap: 24px;
+}
+
+/* Heading - desktop */
+.video-text h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400px;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #164baf;
+}
+
+.video-text h2 span {
+  color: #1274a4;
+}
+
+/* Paragraph - desktop */
+.video-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #000000;
+}
+
+/* Span (bold keywords) - desktop */
+.video-text p span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #1274a4;
+}
+
+/* MOBILE STYLES (390px)*/
+
+@media (max-width: 360px) {
+  .video-section {
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 40px 31px;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Text block - mobile */
+  .video-text {
+    width: 303px;
+    gap: 24px;
+    order: 1;
+    text-align: center;
+  }
+
+  /* Heading - mobile */
+  .video-text h2 {
+    font-size: 28px;
+    font-weight: 500px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #164baf;
+  }
+
+  /* Paragraph - mobile */
+  .video-text p {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #000000;
+  }
+
+  /* Span - mobile */
+  .video-text p span {
+    font-weight: 500px;
+    font-size: 16px;
+    color: #1274a4;
+  }
+
+  /* Video wrapper - mobile */
+  .video-wrapper {
+    width: 327px;
+    height: 320px;
+    border-radius: 30px;
+    overflow: hidden;
+    order: 2;
+  }
+}
+
 /* Group 4 Dev-Shades and Divine-Dev351 */
+
 .planetary-data {
   padding: 40px 5%;
   background: white;
-  text-align: left;
+  text-align: justify;
   font-family: "Arial", sans-serif;
+  overflow-x: auto;
 }
 
 .planetary-data table {
   width: 100%;
+  min-width: 700px;
   max-width: 1100px;
   margin: 2rem auto;
   border-collapse: collapse;
   background: var(--card-bg);
-  border-radius: 15px;
+  border-radius: 20px;
   border: whitesmoke;
   overflow: hidden;
 }
 
 #data-title {
   color: #1a3a6b;
-  text-align: left;
+  text-align: justify;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-family: "Arial", sans-serif;
@@ -154,10 +286,11 @@ padding is optional but i do this because of lists*/
 }
 
 caption {
-  text-align: left;
+  text-align: justify;
   font-size: 13px;
-  margin-bottom: 8px;
-  color: #333;
+  margin: 8px;
+  color: black;
+  font-weight: bold;
 }
 
 thead tr th {
@@ -195,130 +328,255 @@ tbody tr:nth-child(even) td {
   background-color: #f5f9ff;
 }
 
-/* Group 5 bamidelethecreator, leezorae and gbolee002-ux */
+/* =========================
+   RESPONSIVE TABLE TEXT
+   ========================= */
 
-/* SECTION WRAPPER */
-section {
-  max-width: 800px;
-  width: 100%;
+@media (max-width: 768px) {
+  .planetary-data {
+    display: none;
+  }
+}
+/* Desktop */
+.planetary-data table {
+  font-size: 1rem;
 }
 
-/* TITLE */
-h2 {
+.planetary-data th,
+.planetary-data td {
+  padding: 12px;
+  text-align: center;
+}
+
+thead th,
+tbody th,
+tbody td {
+  word-break: break-word;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .planetary-data th,
+  .planetary-data td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #data-title {
+    font-size: 1.3rem;
+  }
+
+  .planetary-data caption {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Group 5 bamidelethecreator, leezorae and gbolee002-ux */
+
+/*CONTACT FORM */
+section[aria-labelledby="contact-title"] {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* CONTACT TITLE */
+section[aria-labelledby="contact-title"] h2 {
   color: #1e4ed8;
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-p {
+/* CONTACT DESCRIPTION */
+section[aria-labelledby="contact-title"] p {
   color: #444;
   margin-bottom: 25px;
   line-height: 1.5;
+  font-weight: 400;
 }
 
-/* FORM LAYOUT */
-form {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+/* FORM */
+#contact {
+  background: #fff;
+  border-radius: 5px;
 }
 
-/* GRID FOR 2 COLUMNS */
-fieldset {
+#contact fieldset {
   border: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-/* FULL WIDTH FIELDS (message + button + radio sections) */
-fieldset div:nth-child(9),
-fieldset div:nth-child(10),
-fieldset div:nth-child(11),
-fieldset div:nth-child(12),
-fieldset p {
-  grid-column: span 2;
+  padding: 10px;
+  font-weight: bold;
+  gap: 10px;
 }
 
 /* LABELS */
-label {
+#contact label {
   display: block;
   font-size: 14px;
-  margin-bottom: 6px;
   color: #333;
 }
 
 /* INPUTS */
-input,
-select,
-textarea {
+#contact input,
+#contact textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #d1d5db;
   border-radius: 6px;
   font-size: 14px;
   outline: none;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+#contact input:focus,
+#contact textarea:focus {
   border-color: #1e4ed8;
-  box-shadow: 0 0 0 2px rgba(30, 78, 216, 0.2);
 }
 
-/* TEXTAREA */
-textarea {
-  resize: none;
+/* Submit button wrapper */
+fieldset div:last-child {
+  grid-column: span 2;
 }
 
-/* RADIO + CHECKBOX GROUPS */
-label input[type="radio"],
-label input[type="checkbox"] {
-  width: auto;
-  margin-right: 8px;
+/* ONLY BUTTON WRAPPER SPANS FULL WIDTH */
+#contact fieldset div:last-child {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-start;
 }
 
-/* GROUP TEXT */
-p {
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-/* SUBMIT BUTTON */
-button {
+/* BUTTON */
+#contact button {
   background: #1e4ed8;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 12px;
-  transition: 0.3s;
-  width: 250px;
+  font-size: 14px;
+  width: 200px;
+  transition: background 0.3s ease;
 }
 
-/* CENTER BUTTON */
-fieldset div:last-child {
-  grid-column: span 2;
-  display: flex;
-  justify-content: flex-start;
+#contact button:hover {
+  background: #173cb0;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .video-section {
+    padding: 80px 50px;
+  }
+
+  .video-wrapper {
+    width: 400px;
+    height: 420px;
+  }
+
+  .video-text {
+    width: 100%;
+  }
+}
+
+/* Phones & Small Tablets */
 @media (max-width: 768px) {
-  fieldset {
+  /* VIDEO SECTION */
+  .video-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .video-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .video-text h2 {
+    font-size: 28px;
+  }
+
+  .video-text p {
+    font-size: 16px;
+  }
+
+  /* IMAGE SECTION */
+  .image-insight img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TABLE */
+  .planetary-data table {
+    min-width: 700px;
+  }
+
+  /* FORM */
+  #contact {
+    padding: 20px;
+  }
+
+  #contact fieldset {
     grid-template-columns: 1fr;
   }
 
-  fieldset div,
-  fieldset p {
+  #contact fieldset div {
     grid-column: span 1 !important;
   }
 
-  button {
+  #contact button {
     width: 100%;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+  }
+
+  .hero nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header img {
+    width: 150px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .video-text h2 {
+    font-size: 24px;
+  }
+
+  .planetary-data {
+    padding: 20px 10px;
+  }
+
+  section[aria-labelledby="contact-title"] {
+    padding: 20px 10px;
   }
 }
