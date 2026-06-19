@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -2%;
+}
+
+h1 ~ p {
+  font-size: 14px;
+}
+
+.about {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 20px;
+  justify-content: center;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+  transform: scaleY(0.5);
+}
+
+footer {
+  background-color: #051540;
+  padding: 50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
